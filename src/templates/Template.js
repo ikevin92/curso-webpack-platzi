@@ -1,5 +1,10 @@
 import getData from '../utils/getData.js';
 
+// importacion assets|
+import github from '../assets/images/github.png';
+import instagram from '../assets/images/instagram.png';
+import twitter from '../assets/images/twitter.png';
+
 const Template = async () => {
   const data = await getData();
   const view = `

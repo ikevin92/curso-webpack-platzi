@@ -25,10 +25,11 @@ module.exports = {
         test: /\.css|.scss$/,
         use: [MiniCSSExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
-      // {
-      //   test: /\.(png|svg|jpg|gif)$/,
-      //   use: ['file-loader'],
-      // },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        // use: ['file-loader'],
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
